@@ -15,7 +15,7 @@ func main() {
 	}
 	mathrand.Seed(int64(binary.LittleEndian.Uint64(b[:])))
 	//mathrand.Seed(time.Now().UnixNano())
-	for _, _ = range make([]int, 1000) {
+	for range make([]int, 1000) {
 		fmt.Println("My favorite number is: ", mathrand.Intn(10))
 	}
 }
